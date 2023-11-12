@@ -10,7 +10,7 @@ The purpose of this software is to create a simple yet functional contact manage
 
 I utilized Firebase Firestore as the cloud database for this project. Firestore is a NoSQL document-oriented database that seamlessly integrates with Firebase projects. It provides real-time synchronization and scalable storage for structured data.
 
-The database consists of a single collection named "Persons," where each document represents a contact. The documents are identified by the first name of the contact, and each document contains fields such as First Name, Last Name, Email, and Phone.
+The database consists of a single collection named "Persons", where each document represents a contact. The documents are identified by the first name of the contact, and each document contains fields such as First Name, Last Name, Email, and Phone.
 
 # Development Environment
 
