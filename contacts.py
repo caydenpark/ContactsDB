@@ -10,12 +10,15 @@ app = firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 def addContact():
+    # Get user input for contact details
     fName = input("\nFirst Name: ")
     lName = input("Last Name: ")
     email = input("Email: ")
     phone = input("Phone Number: ")
 
+    # Create a document reference with the first name as the document ID
     doc_ref = db.collection("Persons").document(fName)
+
     doc_ref.set({
         "First Name":fName,
         "Last Name":lName,
@@ -30,6 +33,8 @@ def addContact():
 
 def deleteContact():
     contact_to_delete = input("\nEnter the name of the person whose contact you wish to delete: ")
+
+    # Check if the contact exists in the database
     doc_ref = db.collection("Persons").document(contact_to_delete)
     doc = doc_ref.get()
 
@@ -44,6 +49,8 @@ def deleteContact():
 
 def displayContact():
     contact_name = input("\nEnter the name of the person whose contact you wish to display: ")
+    
+    # Retrieve the contact details from the database
     doc_ref = db.collection("Persons").document(contact_name)
     doc = doc_ref.get()
 
@@ -61,6 +68,7 @@ def displayContact():
     os.system('clear')
 
 def displayAllContacts():
+    # Retrieve all contacts from the database
     users_ref = db.collection("Persons")
     docs = users_ref.stream()
 
