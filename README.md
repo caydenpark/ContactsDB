@@ -1,10 +1,8 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+I developed a Contact Management System as part of my ongoing journey as a software engineer to enhance my skills and understanding of cloud-based applications. The system allows users to perform basic operations like adding, deleting, and displaying contacts. The application integrates with a Cloud Database, specifically Firebase Firestore, to persistently store contact information.
 
-{Provide a description of the software that you wrote and how it integrates with a Cloud Database. Describe how to use your program.}
-
-{Describe your purpose for writing this software.}
+The purpose of this software is to create a simple yet functional contact management system that leverages a cloud database for data storage. This project aims to demonstrate the integration of a Python application with Firebase Firestore and showcase basic CRUD (Create, Read, Update, Delete) operations.
 
 {Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of the cloud database.}
 
@@ -12,27 +10,26 @@
 
 # Cloud Database
 
-{Describe the cloud database you are using.}
+I utilized Firebase Firestore as the cloud database for this project. Firestore is a NoSQL document-oriented database that seamlessly integrates with Firebase projects. It provides real-time synchronization and scalable storage for structured data.
 
-{Describe the structure of the database that you created.}
+The database consists of a single collection named "Persons," where each document represents a contact. The documents are identified by the first name of the contact, and each document contains fields such as First Name, Last Name, Email, and Phone.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+- __Language:__ Python
 
-{Describe the programming language that you used and any libraries.}
+- __Tools:__ Firebase, Visual Studio Code
+
+- __Libraries:__ ``firebase_admin`` for Firebase integration, ``os`` to clear the terminal screen, and ``time`` to pause execution
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [Firestore Documentation](https://firebase.google.com/docs/firestore/quickstart#python_5)
+- [YouTube](https://www.youtube.com/watch?v=b4W3YQdViTI&t=656s)
+- [Python Firestore Documentation](https://cloud.google.com/python/docs/reference/firestore/latest/index.html)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- Implement user authentication to secure the contact data.
+- Enhance the user interface for a more user-friendly experience.
+- Explore additional features such as and sorting and connecting contacts.
