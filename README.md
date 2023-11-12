@@ -4,9 +4,7 @@ I developed a Contact Management System as part of my ongoing journey as a softw
 
 The purpose of this software is to create a simple yet functional contact management system that leverages a cloud database for data storage. This project aims to demonstrate the integration of a Python application with Firebase Firestore and showcase basic CRUD (Create, Read, Update, Delete) operations.
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of the cloud database.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=qt5vADP1sQQ)
 
 # Cloud Database
 
